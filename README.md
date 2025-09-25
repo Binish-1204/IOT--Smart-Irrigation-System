@@ -12,25 +12,25 @@ Features
 - Environment Sensing: Utilizes a DHT11 sensor for a complete overview of the plant's ambient conditions.
 
 # Hardware Components
-Component                        Role in Project
+Component:                      Role in Project
 
-NodeMCU ESP8266                  The brain of the system; connects to Wi-Fi and controls components.
+NodeMCU ESP8266:                 The brain of the system; connects to Wi-Fi and controls components.
 
-DHT11 Sensor                     Measures ambient air temperature and humidity.
+DHT11 Sensor    :                 Measures ambient air temperature and humidity.
 
-Soil Moisture Sensor             Detects the moisture level in the soil.
+Soil Moisture Sensor:             Detects the moisture level in the soil.
 
-5V Relay Module                  A safe switch to control the high-voltage solenoid valve with the low-voltage NodeMCU.
+5V Relay Module      :            A safe switch to control the high-voltage solenoid valve with the low-voltage NodeMCU.
 
-24V Solenoid Valve               The valve that physically opens or closes to control water flow.
+24V Solenoid Valve    :           The valve that physically opens or closes to control water flow.
 
-24V Power Adapter                An external power supply specifically for the solenoid valve.
+24V Power Adapter      :          An external power supply specifically for the solenoid valve.
 
-Breadboard                       For creating and organizing the prototype circuit.
+Breadboard          :             For creating and organizing the prototype circuit.
 
-Jumper Wires                     To connect all the electronic components.
+Jumper Wires         :            To connect all the electronic components.
 
-Main Switch                      (Optional but recommended) To safely turn power to the 24V adapter on/off.
+Main Switch           :           (Optional but recommended) To safely turn power to the 24V adapter on/off.
 
 # Software & Setup
 
@@ -52,18 +52,18 @@ ThingSpeak by MathWorks
 
 4. Code Configuration
 Choose which version of the code you want to use:
-For Blynk (SmartPlantMonitoring.ino):
-Open the file in the Arduino IDE.
-Add your Wi-Fi credentials to the ssid and pass variables.
-Get an Auth Token from the Blynk app and add it to the auth variable.
-This code supports notifications and a control dashboard.
+- For Blynk (SmartPlantMonitoring.ino):
+  Open the file in the Arduino IDE.
+  Add your Wi-Fi credentials to the ssid and pass variables.
+  Get an Auth Token from the Blynk app and add it to the auth variable.
+  This code supports notifications and a control dashboard.
 
-For ThingSpeak (SmartPlantMonitoring2.ino):
-Open the file in the Arduino IDE.
-Add your Wi-Fi credentials.
-Create a ThingSpeak channel with two fields (for temperature and humidity).
-Add your Channel Number to myChannelNumber and Write API Key to myWriteAPIKey.
-This code is best for simple data logging.
+- For ThingSpeak (SmartPlantMonitoring2.ino):
+  Open the file in the Arduino IDE.
+  Add your Wi-Fi credentials.
+  Create a ThingSpeak channel with two fields (for temperature and humidity).
+  Add your Channel Number to myChannelNumber and Write API Key to myWriteAPIKey.
+  This code is best for simple data logging.
 
 4. Upload to NodeMCU
 Connect your NodeMCU to your computer via USB.
